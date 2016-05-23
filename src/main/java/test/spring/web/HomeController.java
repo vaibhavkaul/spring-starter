@@ -15,8 +15,7 @@ public class HomeController {
 
     @RequestMapping("/")
     @ResponseBody
-    String home(HttpServletResponse response) {
-        response.setHeader("Content-Type", "application/json");
+    String home() {
         return "helo";
     }
 
